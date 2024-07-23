@@ -5,14 +5,12 @@ dept_name Varchar(50)
 
 dept_emp
 -
-id SERIAL PK
-emp_no Integer FK >- employee.emp_no
+emp_no Integer PK FK >- employee.emp_no
 dept_no Varchar(5) FK >- departments.dept_no
 
 dept_manager
 -
-id SERIAL PK
-dept_no Varchar(5) FK >- departments.dept_no
+dept_no Varchar(5) PK FK >- departments.dept_no
 emp_no Integer FK >- employee.emp_no
 
 employee
@@ -27,8 +25,7 @@ hire_date date
 
 salaries
 -
-id SERIAL PK
-emp_no Integer FK >- employee.emp_no
+emp_no Integer PK FK >- employee.emp_no
 salary Integer
 
 titles
